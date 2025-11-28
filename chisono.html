@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi sono | Kevin</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akrobat:wght@300;400;600;700&display=swap">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Akrobat', sans-serif;
+      background: radial-gradient(circle at top, #020818, #020617 55%);
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .wrapper {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .card-page {
+      background: radial-gradient(circle at top left, #020818, #020617);
+      border-radius: 24px;
+      border: 1px solid #1f2937;
+      box-shadow: 0 24px 55px rgba(15, 23, 42, 1);
+      padding: 26px 26px 28px;
+      animation: fadeUp 0.6s ease-out;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .top-row a.back {
+      font-size: 13px;
+      color: #9ca3af;
+      text-decoration: none;
+    }
+
+    .top-row a.back:hover {
+      color: #e5e7eb;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+      gap: 22px;
+    }
+
+    .text {
+      font-size: 15px;
+      color: #d1d5db;
+      line-height: 1.7;
+    }
+
+    .text p + p {
+      margin-top: 10px;
+    }
+
+    .text strong {
+      color: #ffffff;
+    }
+
+    .side-box {
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: 18px;
+      padding: 16px;
+      border: 1px solid #1f2937;
+      font-size: 13px;
+      color: #9ca3af;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .side-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6b7280;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid #374151;
+      background: #020617;
+      color: #e5e7eb;
+      font-size: 11px;
+    }
+
+    @media (max-width: 780px) {
+      .content {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .card-page {
+        padding: 20px 18px 22px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card-page">
+      <div class="top-row">
+        <a href="index.html" class="back">← Torna alla home</a>
+        <span style="font-size:12px; color:#6b7280;">Pagina · Chi sono</span>
+      </div>
+
+      <h1>Chi sono</h1>
+      <div class="subtitle">
+        Una breve biografia su chi sono oggi e dove voglio arrivare domani.
+      </div>
+
+      <div class="content">
+        <div class="text">
+          <p>
+            Mi chiamo <strong>Kevin</strong> e sono uno studente che ha scelto di puntare
+            forte sull’<strong>informatica</strong>. Fin da bambino ho imparato
+            a usare la tecnologia appasiondanomi così, a 14 anni ho iniziato a programmare
+            usando i linguaggi più semplici come HTML/CSS.
+          </p>
+          <p>
+            Oggi mi divido tra scuola, studio autonomo e piccoli progetti personali.
+            Sto lavorando a: <strong>programmazione, hardware, logica</strong> e
+            mentalità orientata ai progetti. Non mi interessa sapere solo la teoria,
+            voglio vedere le cose funzionare davvero.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

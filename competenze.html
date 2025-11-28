@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Competenze | Kevin</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Akrobat:wght@300;400;600;700&display=swap">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Akrobat', sans-serif;
+      background: radial-gradient(circle at top, #020818, #020617 55%);
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .wrapper {
+      max-width: 980px;
+      width: 100%;
+    }
+
+    .card-page {
+      background: radial-gradient(circle at top left, #020818, #020617);
+      border-radius: 24px;
+      border: 1px solid #1f2937;
+      box-shadow: 0 24px 55px rgba(15, 23, 42, 1);
+      padding: 26px 26px 28px;
+      animation: fadeUp 0.6s ease-out;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .top-row a.back {
+      font-size: 13px;
+      color: #9ca3af;
+      text-decoration: none;
+    }
+
+    .top-row a.back:hover {
+      color: #e5e7eb;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 22px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .group {
+      margin-bottom: 16px;
+    }
+
+    .group p {
+      font-size: 14px;
+      color: #d1d5db;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
+
+    .list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .list li {
+      margin-bottom: 4px;
+    }
+
+    .list li::before {
+      content: "• ";
+      color: #22c55e;
+    }
+
+    .side-box {
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: 18px;
+      padding: 16px;
+      border: 1px solid #1f2937;
+      font-size: 13px;
+      color: #9ca3af;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .side-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill {
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid #374151;
+      background: #020617;
+      color: #e5e7eb;
+      font-size: 11px;
+    }
+
+    .level {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .bar {
+      margin-top: 4px;
+      width: 100%;
+      height: 7px;
+      border-radius: 999px;
+      background: #020617;
+      overflow: hidden;
+      border: 1px solid #374151;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #22c55e, #3b82f6);
+      width: var(--value, 60%);
+    }
+
+    @media (max-width: 780px) {
+      .content {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 520px) {
+      .card-page {
+        padding: 20px 18px 22px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card-page">
+      <div class="top-row">
+        <a href="index.html" class="back">← Torna alla home</a>
+        <span style="font-size:12px; color:#6b7280;">Pagina · Competenze</span>
+      </div>
+
+      <h1>Competenze</h1>
+      <div class="subtitle">
+        Una panoramica di quello che so fare oggi!
+      </div>
+
+      <div class="content">
+        <div>
+          <div class="group">
+            <div class="section-title">Sviluppo e programmazione</div>
+            <p>
+              Fin dal inizio mi sono appassionato alla programmazione imparando sia a scuola che da solo.
+              La maggior parte sono tutti progetti personali o siti creati per spassatempo.
+              Nel caso qualcuno mi contattasse per la creazione di un sito web può vedere qua a destra le mie competenze.
+            </p>
+            <ul class="list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="side-box">
+          <div>
+            <div class="side-label">Lavori disponibili</div>
+            <div class="pill-row">
+              <span class="pill">Creazione Siti WEB</span>
+              <span class="pill">Progetti Personali</span>
+              <span class="pill">Logica</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="side-label">Livello</div>
+
+            <div class="level">
+              <span>HTML / CSS</span>
+              <span>Più che buono</span>
+            </div>
+            <div class="bar" style="--value: 75%;">
+              <div class="bar-fill"></div>
+            </div>
+
+            <div class="level" style="margin-top:10px;">
+              <span>JavaScript</span>
+              <span>Buono</span>
+            </div>
+            <div class="bar" style="--value: 50%;">
+              <div class="bar-fill"></div>
+            </div>
+
+            <div class="level" style="margin-top:10px;">
+              <span>Problem solving</span>
+              <span>Più che buono</span>
+            </div>
+            <div class="bar" style="--value: 80%;">
+              <div class="bar-fill"></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
